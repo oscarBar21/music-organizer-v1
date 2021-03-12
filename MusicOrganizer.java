@@ -66,4 +66,12 @@ public class MusicOrganizer
             System.out.println("El rango va de 0 a " + (files.size()-1));
         }
     }
+    
+    public boolean ValidIndex(int index){
+        boolean ValidIndex = true;
+        if(index < 0 || index >= files.size()) {
+            ValidIndex = false;
+        }
+        return ValidIndex;
+    }
 }
